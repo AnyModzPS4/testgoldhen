@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest"><head>
+<title>GAhost 0.0.0</title>
+<style>
+html, body {
+background-image: url('ps4.jpg');
+background-attachment: fixed;
+background-size:100%;
+background-repeat:no-repeat;
+background-color: #24272b;
+color:white;
+margin-top: 0px;
+margin-left: 0px;
+margin-right: 0px;
+overflow: hidden;
+}
+h1 {
+text-shadow: 0.1em 0.1em 0.2em black;
+font-size:25px;
+text-align:center;
+color:white;
+}
+h1 {
+  background: #ccc;
+  background: radial-gradient(#22d4cb, rgb(182, 184, 82));
+  font-family: system-ui;
+  font-size: 4rem;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+ .button {
+  background-color: #8087f3;  
+  border-radius: 5px;
+  color: white;
+  padding: .5em;
+  text-decoration: none;
+  height:100%;
+  display:inline-table;
+  font-family: system-ui;
+}
+
+.button:focus,
+.button:hover {
+  background-color: #07e4f8;
+  color: White;
+}
+
+.button1 {
+  background-color: #f1ed00;  
+  border-radius: 5px;
+  color: rgb(10, 10, 10);
+  padding: .5em;
+  text-decoration: none;
+  height:100%;
+  display:inline-table;
+  font-family: system-ui;
+}
+
+.button1:focus,
+.button1:hover {
+  background-color: #07e4f8;
+  color: White;
+}
+h3 {
+  background: #ccc;
+  background: radial-gradient(#ffe600, rgb(79, 56, 211));
+  font-family: system-ui;
+  font-size: 2rem;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+</style>
+</head>
+<h1 id=msgs></h1>
+<center><H1>GAHost 0.0.0<br /></H1></center>
+<center><H3>Firware 7.50/7.51/7.55<br /></H3></center>
+<hr>
+<br>
+<center><h4>Si te sale <a style="font-size:17px;text-align:center;margin-top: 30px;color:blue;">ERROR</a> <h4>Kernel reinicia el navegador borrando las cookies y datos de navegacion</h1></center></h4>
+<div style="text-align:center">
+   <table align="center" style="width:600px;margin-top:30px;">
+        <tbody><tr>
+        <td align="center" colspan="2">
+<button class="button1" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_goldhen()> GoldHEN 7.55 </button>
+</td></tr></tbody></table>
+<button class="button" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_mira75x()> MIRA 7.5x </button>
+<button class="button" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_mira2b()> MIRA-Beta </button>
+<button class="button" onmouseover="mainpayload4()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader 7.55 </button>
+<br>
+<h1 style="font-size:20px;text-align:center;">Payloads</h1>
+<button class="button" onmouseover="todex()" onmouseout="pagetitle()" onclick=load_todex()> ToDex </button>
+<button class="button" onmouseover="dumper()" onmouseout="pagetitle()" onclick=load_dumper()> Dumper </button>
+<button class="button" onmouseover="ftp()" onmouseout="pagetitle()" onclick=load_ftp()> FTP </button>
+<button class="button" onmouseover="app2usb()" onmouseout="pagetitle()" onclick=load_app2usb()> App2USB </button>
+<br>
+<button class="button" onmouseover="enableUpdates()" onmouseout="pagetitle()" onclick=load_enablebUpdates()> Enable Updates </button>
+<button class="button" onmouseover="disableUpdates()" onmouseout="pagetitle()" onclick=load_disableUpdates()> Disable Updates </button>
+<button class="button" onmouseover="dbackup()" onmouseout="pagetitle()" onclick=load_dbackup()> DB Backup </button>
+<button class="button" onmouseover="dbrestore()" onmouseout="pagetitle()" onclick=load_dbrestore()> DB Restore </button>
+<br>
+<button class="button" onmouseover="historyBlocker()" onmouseout="pagetitle()" onclick=load_historyBlocker()> History Blocker </button>
+<button class="button" onmouseover="ebrowser()" onmouseout="pagetitle()" onclick=load_ebrowser()> Enable Browser </button>
+<button class="button" onmouseover="kernelDump()" onmouseout="pagetitle()" onclick=load_kernelDump()> Kernel Dumper </button>
+<button class="button" onmouseover="kernelClock()" onmouseout="pagetitle()" onclick=load_kernelClock()> Kernel Clock </button>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<button class="button" onmouseover="ps4debug()" onmouseout="pagetitle()" onclick=load_ps4debug()> PS4 Debug </button>
+<button class="button" onmouseover="disbaslr()" onmouseout="pagetitle()" onclick=load_disbAslr()> Disable ASLR </button>
+<button class="button" onmouseover="rifrenamer()" onmouseout="pagetitle()" onclick=load_rifRen()> RIF Renamer </button>
+<button class="button" onmouseover="fanthreshold()" onmouseout="pagetitle()"  style="margin-right:10px" onclick=load_fanthreshold()> Fan Threshold </button><select id="tempC"></select>&#176;C
+<br>
+<button class="button" onmouseover="exitidu()" onmouseout="pagetitle()" onclick=load_exitidu()> Exit IDU </button>
+<button class="button" onmouseover="gtavmods()" onmouseout="pagetitle()" onclick=load_gtavmods()> GTA V Mods </button>
+<button class="button" onmouseover="webrte()" onmouseout="pagetitle()" onclick=load_webrte()> WebRTE </button>
+<h5 style="font-size:25px;text-align:center;margin-top: 15px;color:yellow;">Gracias<a href="https://twitter.com/AnyMozd" style="color:#7CF7E2 ;"> @AnyModz</a>&nbsp&nbsp<a style="color:white;"></style>Por hacer el host posible</a>&nbsp&nbsp<a href="https://twitter.com/Gh0x0000st1" style="color:#7CF7E2 ;"> @Gh0x0000st</a>&nbsp&nbsp<a style="color:white;"></style>Por la ayuda del host y testeo</a>&nbsp&nbsp</h1>
+<br>
+</div>
+<script>
+for(var i=50; i<=75; i=i+5){
+    var select = document.getElementById("tempC");
+    var option = document.createElement("OPTION");
+	select.options.add(option);
+	option.text = i;
+	option.value = i;
+}
+tempC.value=60;
+
+function load_goldhen(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=goldhen_1.1_750.bin';
+        link.click();
+}
+function load_mira75x(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'mira-75x.html';
+        link.click();
+}
+function load_mira2b(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=mira2b.js';
+        link.click();
+}
+function load_binloader(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'binloader.html#f=loader-755.js';
+        link.click();
+}
+function load_todex(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=todex.js';
+        link.click();
+}
+function load_dumper(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=app-dumper.js';
+        link.click();
+}
+function load_ftp(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=ftp.js';
+        link.click();
+}
+function load_app2usb(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=app2usb.js';
+        link.click();
+}
+function load_enablebUpdates(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=enable-updates.js';
+        link.click();
+}
+function load_disableUpdates(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=disable-updates.js';
+        link.click();
+}
+function load_dbackup(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=backup.js';
+        link.click();
+}
+function load_dbrestore(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=restore.js';
+        link.click();
+}
+function load_historyBlocker(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=history-blocker.js';
+        link.click();
+}
+function load_ebrowser(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=enable-browser.js';
+        link.click();
+}
+function load_kernelDump(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=kernel-dumper.js';
+        link.click();
+}
+function load_kernelClock(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=kernel-clock.js';
+        link.click();
+}
+function load_ps4debug(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=ps4debug.js';
+        link.click();
+}
+function load_disbAslr(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=disable-aslr.js';
+        link.click();
+}
+function load_rifRen(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=rif-renamer.js';
+        link.click();
+}
+function load_fanthreshold(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = "payload.html#f=fan-threshold"+tempC.value+".js";
+        link.click();
+}
+function load_exitidu(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=idu.js';
+        link.click();
+}
+function load_gtavmods(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtav-mods.html';
+        link.click();
+}
+function load_webrte(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=webrte.js';
+        link.click();
+}
+function load_ps4trainer(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'http://ps4trainer.com/Trainer/index.html';
+        link.click();
+}
+function load_morepls(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'more-plds.html';
+        link.click();
+}
+</script>
+</body>
+</html>
